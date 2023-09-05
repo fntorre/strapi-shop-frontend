@@ -1,0 +1,287 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 80px;
+}
+.container-general {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  background: whitesmoke;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  max-width: 100%;
+}
+
+.slider-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  font-family: monospace;
+  transform: translateY(-50%);
+}
+
+.slider-btn.next-btn {
+  right: 10px;
+}
+
+.slider-btn.prev-btn {
+  left: 10px;
+}
+
+.productInfo {
+  padding: 30px 20px;
+  line-height: 1.35;
+}
+
+.productBox {
+  margin-bottom: 50px;
+  border: 1px solid #00000014;
+}
+
+a.more {
+  display: block;
+  width: 100px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+p.price {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: coral;
+}
+
+p.skuName {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  color: #a1a1a1;
+}
+
+div#productPage .productBox {
+  background-color: white;
+  border: 0;
+}
+
+header#main-header {
+  padding-bottom: 15px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin: 25px 0;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: none;
+}
+
+.swiper-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: coral;
+}
+
+@media screen and (min-width: 768px) {
+  #productList,
+  .productBox {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1300px) {
+  .productBox {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #productList {
+    display: block;
+  }
+}
+
+#cart {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  height: 94vh;
+  width: 350px;
+  z-index: 11;
+  box-shadow: -2px 0px 8px #00000038;
+  overflow: auto;
+}
+
+#cart.show, #shadowbg.show {
+  display: block;
+}
+
+#shadowbg {
+  height: 100vh;
+  width: 100%;
+  background-color: #00000042;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+header#main-header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 12;
+  top: 0;
+  padding-top: 10px;
+}
+
+header#main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+ul#cartItems {
+  list-style: none;
+  padding: 0;
+}
+
+ul#cartItems li {
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+ul#cartItems li h3 {
+  margin: 0 0 2px;
+  padding: 0;
+}
+
+button#addToCartBtn {
+  padding: 10px 25px;
+  border: 0;
+  background: black;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  font-size: 1em;
+}
+
+input#quantityInput {
+  padding: 9px;
+  width: 30px;
+}
+
+.contBuy {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+#btnCart,
+#closeCart,
+button#addToCartBtn {
+  cursor: pointer;
+}
+
+#btnCart {
+  background-color: #ff7f5036;
+  padding: 5px 5px 5px 10px;
+  color: coral;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-top: 20px;
+}
+
+#closeCart {
+  width: 75px;
+  padding: 7px 10px;
+  border: 1px solid;
+  text-align: center;
+  color: coral;
+}
+
+button.removeBtn {
+  margin-top: 10px;
+  padding: 4px 15px;
+  border: 0;
+  background-color: #c1c1c1;
+  color: white;
+  font-family: 'Ubuntu';
+  cursor: pointer;
+  display: block;
+}
+
+p#cartTotal {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: coral;
+  background-color: #ff7f501c;
+  padding: 10px 15px;
+  text-align: right;
+  border-bottom: 4px solid;
+}
+
+
+span#itemsCart {
+  background-color: coral;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.rowCart {
+  display: flex;
+  gap: 20px;
+  line-height: 1.3;
+}
+
+select#sizeSelector {
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+
+.rowCart img {
+  height: fit-content;
+}
