@@ -41,7 +41,7 @@ fetch(apiUrl)
       const verMasLink = productElement.querySelector("a"); // Selecciona el enlace "Ver Más"
 
       verMasLink.addEventListener("click", (event) => {
-        let url = "file:///C:/Users/usuario/Desktop/desk/strapi/front";
+        let url = "file:///C:/Users/usuario/Desktop/desk/strapi/repo/strapi-shop-frontend";
         event.preventDefault(); // Evita el comportamiento de enlace predeterminado
         const productUrl = url + `/product.html?producto=${id}`;
         window.location.href = productUrl; // Navega a la página de detalles del producto
