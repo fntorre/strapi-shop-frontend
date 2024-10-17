@@ -40,6 +40,15 @@ body {
   left: 10px;
 }
 
+.productBox .slider-btn {
+  font-size: 40px;
+}
+
+#productList .productBox .slider-btn {
+  font-size: 25px;
+}
+
+
 .productInfo {
   padding: 30px 20px;
   line-height: 1.35;
@@ -50,7 +59,12 @@ body {
   border: 1px solid #00000014;
 }
 
-a.more {
+.productInfo a {
+  text-decoration: none;
+  color: black;
+}
+
+.productInfo a.more {
   display: block;
   width: 100px;
   margin-top: 20px;
@@ -240,9 +254,9 @@ button#addToCartBtn {
   text-align: center;
   color: coral;
   background: url(file:///C:/Users/usuario/Desktop/desk/strapi/repo/strapi-shop-frontend/img/close-icon.png) no-repeat;
-  background-position-x: 5%;
-  background-position-y: 6px;
-  background-size: 20px;
+  background-position-x: 9%;
+  background-position-y: 8px;
+  background-size: 16px;
   font-weight: 600;
 }
 
@@ -270,15 +284,15 @@ p#cartTotal {
 
 span#itemsCart {
   background-color: black;
-  color: white;
-  width: 22px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin-left: 3px;
-  font-size: 13px;
-  padding-top: 2px;
+    color: white;
+    width: 22px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 3px;
+    font-size: 12px;
+    padding-top: 4px;
 }
 
 .rowCart {
